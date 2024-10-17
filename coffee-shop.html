@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        /*
+        Css reset - targets all css on the page
+        */
+        *{
+            margin: 0;
+            padding: 0%;
+        }
+        body{
+            line-height: 1.5;
+            font-family: Arial, Helvetica, sans-serif;
+        }
+    header{
+        background-color: #6b4226;
+        color: #fff;
+        padding: 20px;
+        text-align: center;
+        }         
+        nav{
+            background-color: #f4f4f4;
+            padding: 15px;
+            display: flex;
+            justify-content: space-around;
+        }   
+        /* targeting html heirarchy requires that we seperate tags with spaces */
+        nav a{
+            color: #6b4226;
+            text-decoration: none;
+            font-weight: bold;
+        }
+        /* classes are targeted using a dot (.) */
+        .box{
+            border-width: 1px;
+            border-color: #ccc;
+            border-style: solid;
+            padding: 20px;
+            margin-bottom: 20px;
+        }
+        main{
+            margin: 20px;
+            padding: 20px;
+        }
+        ul{
+            padding: 20px;
+        }
+        .highlight{
+            background-color: #d6c4ab;
+            border-color: #d4b49b;
+        }
+    </style>
+</head>
+<body>
+    <!--website header-->
+    <header>
+        <h1>welcome to our coffee shop</h1>
+    </header>
+
+    <!--website navigation-->
+    <nav>
+       <a href="">home</a>
+       <a href="">menu</a>
+       <a href="">about us</a>
+       <a href="">content</a> 
+    </nav>    
+
+    <!-- website content -->
+<main>
+    <!--welcome box-->
+    <div class="box highlight">
+        <h2>our story</h2>
+        <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Quod suscipit in porro omnis laudantium. Vitae natus est omnis ad quas fugiat nostrum eaque! Odio, quo.</p>
+    </div>
+    <!-- featured items-->
+    <div class="box">
+        <h2>featured items</h2>
+        <ul>
+            <li>espresso - &euro;1.50</li>
+            <li>capuccino - &euro; 3.50</li>
+            <li>americano - &euro;2.00</li>
+            <li>macchiato - &euro;2.30</li>
+        </ul>
+    </div>
+
+    <!-- location box-->
+    <div class="box">
+        <h2>Location</h2>
+        <p>door 69, 420 Str, Mosta</p>
+
+    </div>
+</main>
+
+</body>
+</html>
